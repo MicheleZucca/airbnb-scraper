@@ -18,14 +18,14 @@ class Location:
     def get_type(self):
         return self.type
 
-    def get_camere(self):
-        return self.camere
+    def get_rooms(self):
+        return self.rooms
 
-    def get_bagni(self):
-        return self.bagni
+    def get_bathrooms(self):
+        return self.bathrooms
 
-    def get_ospiti(self):
-        return self.ospiti
+    def get_guests(self):
+        return self.guests
 
     def set_link(self, link):
         self.link = link
@@ -39,28 +39,28 @@ class Location:
     def set_type(self, type):
         self.type = type
 
-    def set_camere(self, camere):
-        self.camere = camere
+    def set_rooms(self, rooms):
+        self.rooms = rooms
 
-    def set_bagni(self, bagni):
-        self.bagni = bagni
+    def set_bathrooms(self, bathrooms):
+        self.bathrooms = bathrooms
 
-    def set_ospiti(self, ospiti):
-        self.ospiti = ospiti
+    def set_guests(self, guests):
+        self.guests = guests
 
     def print_location(self, with_link):
         if with_link:
             print(self.get_link())
             print(self.get_title())
             print(self.get_price())
-            print(self.get_camere())
-            print(self.get_bagni())
-            print(self.get_ospiti())
+            print(self.get_rooms())
+            print(self.get_bathrooms())
+            print(self.get_guests())
             print(self.get_type())
         else:
             print(self.get_title())
             print(self.get_price())
-            print(self.get_camere())
-            print(self.get_bagni())
-            print(self.get_ospiti())
+            print(self.get_rooms())
+            print(self.get_bathrooms())
+            print(self.get_guests())
             print(self.get_type())

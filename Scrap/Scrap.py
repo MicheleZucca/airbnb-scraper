@@ -115,9 +115,9 @@ class Scrap:
             self_location.set_link(location.get_link())
             self_location.set_title(location.get_title())
             self_location.set_price(location.get_price())
-            self_location.set_camere(location_sheet.get('rooms'))
-            self_location.set_bagni(location_sheet.get('bathrooms'))
-            self_location.set_ospiti(location_sheet.get('people'))
+            self_location.set_rooms(location_sheet.get('rooms'))
+            self_location.set_bathrooms(location_sheet.get('bathrooms'))
+            self_location.set_guests(location_sheet.get('people'))
             self_location.set_type(location_sheet.get('type'))
             self_locations.append(self_location)
 
